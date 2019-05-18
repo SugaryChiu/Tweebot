@@ -1,0 +1,50 @@
+[
+    {
+        "text": "goodnight",
+        "intent": "goodbye",
+        "intent_prediction": {
+            "name": "goodnight",
+            "confidence": 0.7748578786849976
+        }
+    },
+    {
+        "text": "Good morning",
+        "intent": "greet",
+        "intent_prediction": {
+            "name": "goodmorning",
+            "confidence": 0.8773394227027893
+        }
+    },
+    {
+        "text": "brilliant",
+        "intent": "smart",
+        "intent_prediction": {
+            "name": "good",
+            "confidence": 0.751287043094635
+        }
+    },
+    {
+        "text": "so nice of you",
+        "intent": "thanks",
+        "intent_prediction": {
+            "name": "good",
+            "confidence": 0.7673112154006958
+        }
+    },
+    {
+        "text": "I'm good",
+        "intent": "doing_well",
+        "intent_prediction": {
+            "name": "good",
+            "confidence": 0.7645570039749146
+        }
+    },
+    {
+        "text": "speak with me",
+        "intent": "lets_talk",
+        "intent_prediction": {
+            "name": "talk",
+            "confidence": 0.8160182237625122
+        }
+    }
+]
