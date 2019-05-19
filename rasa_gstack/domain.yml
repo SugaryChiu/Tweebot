@@ -68,3 +68,6 @@ templates:
   - text: Here are the results.
   - text: I found these results.
   - text: Here you are.
+  utter_no_user_topic:
+  - text: Neither user nor topic is specified. Please specify at least one.
+

@@ -1,25 +1,25 @@
 %YAML 1.1
 ---
 actions:
-- utter_default
-- utter_help
-- utter_comment
-- utter_greet
-- utter_bye
-- utter_ofc
-- action_restart
-- action_get_tweets
 - utter_search_heavy
 - utter_search_light
-- utter_reply
+- utter_default
+- utter_greet
+- utter_help
+- action_restart
 - utter_anything_else
+- utter_reply
+- utter_ofc
+- utter_bye
+- action_get_tweets
+- utter_comment
 config:
   store_entities_as_slots: true
 entities:
-- time
 - content
 - topic
 - account
+- time
 forms: []
 intents:
 - tweet_search:
@@ -45,19 +45,11 @@ slots:
     auto_fill: true
     initial_value: null
     type: rasa_core.slots.TextSlot
-  tag:
-    auto_fill: true
-    initial_value: null
-    type: rasa_core.slots.TextSlot
   time:
     auto_fill: true
     initial_value: null
     type: rasa_core.slots.TextSlot
   topic:
-    auto_fill: true
-    initial_value: null
-    type: rasa_core.slots.TextSlot
-  user:
     auto_fill: true
     initial_value: null
     type: rasa_core.slots.TextSlot
@@ -80,6 +72,8 @@ templates:
   - text: Great. How can I help you?
   - text: Great. Tell me How can I help you?
   - text: Great. Tell me what all news you would like to get.
+  utter_no_user_topic:
+  - text: Neither user nor topic is specified. Please specify at least one.
   utter_ofc:
   - text: I can definitely help you.
   - text: Surely, I can help you.

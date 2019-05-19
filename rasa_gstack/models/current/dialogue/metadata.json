@@ -2,31 +2,34 @@
   "action_fingerprints": {
     "action_listen": {
       "slots": [
-        "content",
         "time",
-        "account",
-        "topic"
+        "content"
       ]
     },
-    "utter_default": {
-      "slots": []
-    },
     "action_get_tweets": {
-      "slots": []
-    },
-    "utter_greet": {
-      "slots": []
+      "slots": [
+        "topic",
+        "time",
+        "account",
+        "content"
+      ]
     },
     "utter_anything_else": {
       "slots": []
     },
-    "utter_help": {
+    "utter_reply": {
       "slots": []
     },
     "utter_bye": {
       "slots": []
     },
-    "utter_reply": {
+    "utter_help": {
+      "slots": []
+    },
+    "utter_greet": {
+      "slots": []
+    },
+    "utter_default": {
       "slots": []
     }
   },
@@ -44,7 +47,7 @@
     "rasa_core.policies.memoization.MemoizationPolicy",
     "rasa_core.policies.form_policy.FormPolicy"
   ],
-  "trained_at": "20190519-000258",
+  "trained_at": "20190519-093800",
   "rasa_core": "0.14.4",
   "tensorflow": "1.13.1",
   "sklearn": "0.20.3"

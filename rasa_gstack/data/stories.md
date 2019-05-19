@@ -18,16 +18,19 @@
 * tweet_search
 - utter_search_light
 - action_get_tweets
+- slot{"account": null, "topic": null, "content": null, "time": null}
 
 ## tweets path time range
 * tweet_search{"time": "3 weeks"}
 - utter_search_heavy
 - action_get_tweets
+- slot{"account": null, "topic": null, "content": null, "time": null}
 
 ## tweets path pictures
 * tweet_search{"content": "pictures"}
 - utter_search_heavy
 - action_get_tweets
+- slot{"account": null, "topic": null, "content": null, "time": null}
 
 ## thanks path 1
 * thanks
