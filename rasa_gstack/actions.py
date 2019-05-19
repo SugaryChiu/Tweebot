@@ -177,7 +177,7 @@ class ActionGetTweets(Action):
                             dispatcher.utter_attachment(image_url)
 
             else:  # if topic is None:
-                dispatcher.utter_template('utter_no_user_topic')
+                dispatcher.utter_message('Neither user nor topic is specified. Please specify at least one.')
 
     def get_pictures(self, api, dispatcher, tracker, domain):
         display_count = 0

@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9845628a-9580-4024-ae32-b981ede2bc7b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Tweebot.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/backup/rasa_gstack/credentials.yml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/backup/rasa_gstack/tests/test_tweepy.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/rasa_stack/scratch_nlu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backup/rasa_gstack/.github/ISSUE_TEMPLATE.md" beforeDir="false" afterPath="$PROJECT_DIR$/backup/rasa_gstack/.github/ISSUE_TEMPLATE.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backup/rasa_gstack/.github/PULL_REQUEST_TEMPLATE.md" beforeDir="false" afterPath="$PROJECT_DIR$/backup/rasa_gstack/.github/PULL_REQUEST_TEMPLATE.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backup/rasa_gstack/.github/no-response.yml" beforeDir="false" afterPath="$PROJECT_DIR$/backup/rasa_gstack/.github/no-response.yml" afterDir="false" />
@@ -54,112 +52,20 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/rasa_gstack/Makefile">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="180">
-                  <caret line="12" column="56" selection-start-line="12" selection-start-column="56" selection-end-line="12" selection-end-column="56" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/README.md">
-              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-                <state split_layout="FIRST">
-                  <first_editor relative-caret-position="156">
-                    <caret line="92" selection-start-line="92" selection-end-line="92" />
-                  </first_editor>
-                  <second_editor />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/rasa_gstack/actions.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="157">
-                  <caret line="61" column="42" selection-start-line="61" selection-start-column="42" selection-end-line="61" selection-end-column="42" />
-                  <folding>
-                    <element signature="e#24#62#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/rasa_gstack/data/stories.md">
-              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-                <state split_layout="FIRST">
-                  <first_editor relative-caret-position="259">
-                    <caret line="28" column="23" lean-forward="true" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
-                  </first_editor>
-                  <second_editor />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/rasa_gstack/data/nlu_data.md">
-              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-                <state split_layout="FIRST">
-                  <first_editor relative-caret-position="220">
-                    <caret line="1536" column="38" selection-start-line="1536" selection-start-column="38" selection-end-line="1536" selection-end-column="38" />
-                  </first_editor>
-                  <second_editor />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/rasa_gstack/policy.yml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="60">
-                  <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/rasa_gstack/nlu_config.yml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="30">
-                  <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/rasa_gstack/domain.yml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="331">
-                  <caret line="72" selection-start-line="72" selection-end-line="72" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/rasa_gstack/tests/test_tweepy.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="192">
-                  <caret line="53" column="23" lean-forward="true" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
-                  <folding>
-                    <element signature="e#0#13#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="596">
+                <caret line="139" column="65" lean-forward="true" selection-start-line="139" selection-start-column="65" selection-end-line="139" selection-end-column="65" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -184,7 +90,7 @@
     </replaceStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/backup/rasa_gstack" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -204,11 +110,11 @@
         <option value="$PROJECT_DIR$/rasa_gstack/data/nlu.md" />
         <option value="$PROJECT_DIR$/rasa_gstack/Makefile" />
         <option value="$PROJECT_DIR$/rasa_gstack/data/nlu_data.md" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/rasa_gstack/domain.yml" />
         <option value="$PROJECT_DIR$/rasa_gstack/tests/test_tweepy.py" />
         <option value="$PROJECT_DIR$/rasa_gstack/data/stories.md" />
         <option value="$PROJECT_DIR$/rasa_gstack/actions.py" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -234,19 +140,7 @@
             <path>
               <item name="Tweebot" type="b2602c69:ProjectViewProjectNode" />
               <item name="Tweebot" type="462c0819:PsiDirectoryNode" />
-              <item name="rasa_gstack" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tweebot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tweebot" type="462c0819:PsiDirectoryNode" />
-              <item name="rasa_gstack" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tweebot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tweebot" type="462c0819:PsiDirectoryNode" />
-              <item name="rasa_gstack" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="examples" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -272,8 +166,8 @@
       <recent name="$PROJECT_DIR$/backup_coarseLoig" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/rasa_gstack/data" />
       <recent name="$PROJECT_DIR$/backup" />
+      <recent name="$PROJECT_DIR$/rasa_gstack/data" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -293,6 +187,9 @@
       <module name="Tweebot" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/rasa_stack" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -312,6 +209,9 @@
       <module name="Tweebot" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/rasa_gstack/tests" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -352,12 +252,12 @@
       <workItem from="1557332261230" duration="119000" />
       <workItem from="1557345865415" duration="3685000" />
       <workItem from="1557373955541" duration="2062000" />
-      <workItem from="1557810676198" duration="52478000" />
+      <workItem from="1557810676198" duration="54768000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58970000" />
+    <option name="totallyTimeSpent" value="61260000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="813" extended-state="6" />
@@ -377,7 +277,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5007153" side_tool="true" weight="0.26768377" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49928468" visible="true" weight="0.32732317" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49928468" weight="0.1886269" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.37170595" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -598,37 +498,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rasa_gstack/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="195">
-            <caret line="13" column="4" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rasa_gstack/nlu_config.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rasa_gstack/Makefile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="56" selection-start-line="12" selection-start-column="56" selection-end-line="12" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="156">
-            <caret line="92" selection-start-line="92" selection-end-line="92" />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -646,13 +519,6 @@
             <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rasa_gstack/domain.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="72" selection-start-line="72" selection-end-line="72" />
         </state>
       </provider>
     </entry>
@@ -676,7 +542,7 @@
     <entry file="file://$PROJECT_DIR$/rasa_gstack/tests/test_tweepy.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
-          <caret line="53" column="23" lean-forward="true" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
+          <caret line="53" column="23" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
@@ -700,11 +566,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/rasa_gstack/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="56" selection-start-line="12" selection-start-column="56" selection-end-line="12" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/rasa_gstack/data/stories.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="259">
-            <caret line="28" column="23" lean-forward="true" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
+          <first_editor relative-caret-position="333">
+            <caret line="28" column="23" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rasa_gstack/domain.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="71" column="75" lean-forward="true" selection-start-line="71" selection-start-column="10" selection-end-line="71" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rasa_gstack/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-603">
+            <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
           </first_editor>
           <second_editor />
         </state>
@@ -712,11 +602,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/rasa_gstack/actions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="61" column="42" selection-start-line="61" selection-start-column="42" selection-end-line="61" selection-end-column="42" />
+        <state relative-caret-position="2659">
+          <caret line="184" column="29" lean-forward="true" selection-start-line="184" selection-start-column="29" selection-end-line="184" selection-end-column="29" />
           <folding>
             <element signature="e#24#62#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="596">
+            <caret line="139" column="65" lean-forward="true" selection-start-line="139" selection-start-column="65" selection-end-line="139" selection-end-column="65" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

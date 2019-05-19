@@ -66,15 +66,25 @@ make train-nlu
 make train-core
 ``` 
 
-## Limitations for now:
-The training set needs some improvement because right now it does not generalize properly.
-This means that if "dogs" are mentioned in the data, it could identify "dogs" as a topic to search.
-But if instead I told the bot to search for "pictures of wine", then it does not know "wine" is something to search for.
+## Updates:
 
-One way to improve this is to expand the dataset. Another fallback way is to make the bot ask the user if it does not know what to search.
-This can be done using slot.
+I added more nlu data to make the model generalize better.
 
-Before I fix this, let's keep the dialogues simple and predictable (resembles dataset) for testing purposes.
+The core can now handle all the entities with a practical workflow 
+(account, topic, time range, pictures). Please refer to updated examples below to see performance.
+
+I structured the outputs. Now for each tweets, it will return (utterance) the user name, the time posted, the text and the pictures (if any). 
+For picture search, it only returns the picture url. I also figure out the tokenize and vectorize step, as is required and also necessary. 
+The rationale is if we search a user's timeline, the returned results may or may not contain a specific topic. 
+Therefore we need to measure the similarity between user's input and the results based on vectorization cosine similarity. 
+This can recommend the most relevant result. But for direct topic search (api_search instead of user_timeline) without an account specified, 
+we won't need the vectorization because the twitter search algorithm does that for us.
+
+I also implemented a smart date/time parser. For now, if the core gets something like "7 days", it will filter the results returning 
+only recent 7 days' tweets. (See examples below). 
+A more arbitrary time range function needs more training data and I prefer not to look into it for now.
+
+The core can also handle some exception cases with a request for more exact input, as you can see in the examples.
 
 ## Examples: 
 Run server
@@ -85,9 +95,23 @@ Run core
 
 ![core](./examples/core.png)
 
-Query tweets
+Ask about a user
 
-![tweets](./examples/tweets.png)
+![tweets](./examples/account.png)
+
+Ask about a user with specific topic
+
+![tweets](./examples/account_topic.png)
+
+Ask about a user with specific time range (pay attention to the time)
+
+![tweets](./examples/account_time_1.png)
+
+![tweets](./examples/account_time_2.png)
+
+Ask about a specific topic
+
+![tweets](./examples/topic.png)
 
 Query pictures
 
@@ -100,18 +124,17 @@ The returned url linked to a picture like this
 ## Basic syntax:
 
 * What is @google talking about on Twitter?
-* Show me tweets containing #TowsonU within 2 months.
-* Show me some tweets about dogs.
-* What is Walmart talking about on Twitter?
+* Show me tweets containing #TowsonU
+* Show me some tweets about dogs
+* What is Walmart talking about within 2 days
 * Show me some pictures of the moon.
 
-## Other things to be finely honed:
+## Things to be done:
 
-* Include the user name in the tweets results
-* Respond in a more human-like way 
-* Ask if not clear about something
-* Make more options working
-    * time range
-    * account
-    * tags    
-* Fallback options to avoid errors
+* Connect to a GUI 
+* Make a installation package
+
+## Things not likely to be covered:
+
+* Sentiment analysis (very brief based on existing data, no tuning)
+* Wider time range search with advanced search (Twitter API only)
