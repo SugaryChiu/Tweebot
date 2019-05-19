@@ -97,6 +97,13 @@ The returned url linked to a picture like this
 
 ![cats](./examples/cats.png)
 
+## Basic syntax:
+
+* What is @google talking about on Twitter?
+* Show me tweets containing #TowsonU within 2 months.
+* Show me some tweets about dogs.
+* What is Walmart talking about on Twitter?
+* Show me some pictures of the moon.
 
 ## Other things to be finely honed:
 

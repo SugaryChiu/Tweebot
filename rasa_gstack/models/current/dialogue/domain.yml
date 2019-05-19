@@ -1,28 +1,30 @@
 %YAML 1.1
 ---
 actions:
+- utter_default
+- utter_help
+- utter_comment
+- utter_greet
+- utter_bye
+- utter_ofc
 - action_restart
 - action_get_tweets
-- utter_greet
+- utter_search_heavy
+- utter_search_light
 - utter_reply
-- utter_help
 - utter_anything_else
-- utter_comment
-- utter_ofc
-- utter_bye
-- utter_default
 config:
   store_entities_as_slots: true
 entities:
-- tag
-- user
+- time
 - content
 - topic
 - account
-- time
 forms: []
 intents:
 - tweet_search:
+    use_entities: true
+- stop:
     use_entities: true
 - greet:
     use_entities: true
@@ -84,3 +86,11 @@ templates:
   utter_reply:
   - text: I'm doing great. Please let me know what I can do for you.
   - text: I'm doing great. Tell me How can I help you today?
+  utter_search_heavy:
+  - text: Please wait. I am getting what you want...
+  - text: I'm working on it. Relax for a second.
+  - text: I'm preparing the fantastic results for you.
+  utter_search_light:
+  - text: Here are the results.
+  - text: I found these results.
+  - text: Here you are.

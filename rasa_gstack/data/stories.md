@@ -14,14 +14,19 @@
 * fine_ask
 - utter_reply
 
-## tweets path 1
+## tweets path text
 * tweet_search
-- utter_ofc
+- utter_search_light
 - action_get_tweets
 
-## tweets path 2
-* tweet_search
-- utter_comment
+## tweets path time range
+* tweet_search{"time": "3 weeks"}
+- utter_search_heavy
+- action_get_tweets
+
+## tweets path pictures
+* tweet_search{"content": "pictures"}
+- utter_search_heavy
 - action_get_tweets
 
 ## thanks path 1
@@ -31,4 +36,3 @@
 ## bye path 1
 * bye
 - utter_bye
-

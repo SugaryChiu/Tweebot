@@ -1,24 +1,29 @@
 {
   "action_fingerprints": {
     "action_listen": {
+      "slots": [
+        "content",
+        "time",
+        "account",
+        "topic"
+      ]
+    },
+    "utter_default": {
       "slots": []
     },
     "action_get_tweets": {
       "slots": []
     },
-    "utter_help": {
+    "utter_greet": {
       "slots": []
     },
     "utter_anything_else": {
       "slots": []
     },
-    "utter_default": {
+    "utter_help": {
       "slots": []
     },
     "utter_bye": {
-      "slots": []
-    },
-    "utter_greet": {
       "slots": []
     },
     "utter_reply": {
@@ -39,7 +44,7 @@
     "rasa_core.policies.memoization.MemoizationPolicy",
     "rasa_core.policies.form_policy.FormPolicy"
   ],
-  "trained_at": "20190518-002012",
+  "trained_at": "20190519-000258",
   "rasa_core": "0.14.4",
   "tensorflow": "1.13.1",
   "sklearn": "0.20.3"

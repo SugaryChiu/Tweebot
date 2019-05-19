@@ -55,6 +55,11 @@ class ActionGetTweets(Action):
         else:
             self.get_tweets(api, dispatcher, tracker, domain)
 
+        return [SlotSet("time", None),
+                SlotSet("content", None),
+                SlotSet("topic", None),
+                SlotSet("account", None)]
+
     def get_tweets(self, api, dispatcher, tracker, domain):
         topic = tracker.get_slot('topic')  # TODO: include other entities
         max_tweets = 3

@@ -1,174 +1,97 @@
-<!--- Make sure to update this training data file with more training examples from https://forum.rasa.com/t/rasa-starter-pack/704 --> 
+## intent:account_here
+- I am here
+- here I am
+- I'm right here
+- I'm already here
+- can you tell if I'm here or not
 
-## intent:tweet_search
-- Show me all tweets having #[TowsonU](tag)
-- Show me what [cnn](user) is talking about on twitter
-- Show me what [fox](user) is talking about on twitter
-- Show me what [abc](user) is talking about on twitter
-- Show me some fun [pictures](content) about [puppies](topic)
-- Show me some fun [images](content) about [puppies](topic)
-- Show me tweets from @[united](account) in the [last three weeks](time) mentioning about the [environment](topic)
+## intent:account_joking
+- I am joking
+- I'm kidding
+- I'm just being funny
+- it was a joke
+- I was just joking
+- it's a joke
+- joking
+- just kidding
+- kidding
+- I'm just playing with you
 
-- I am interested in [Trump](user)'s tweets
-- I am interested in [Trump](user)'s tweets about [immigration](topic)
+## intent:account_lonely
+- I am lonely
+- I'm very lonely
+- I'm so lonely
+- I'm really lonely
+- I am feeling lonely
+- I feel lonely
 
+## intent:account_looks_like
+- what do I look like
+- how do I look
+- do I look good
+- do you know what I look like
+- can you see what I look like
+- what do you think I look like
 
+## intent:account_sad
+- I am sad
+- I'm grieving
+- I am depressed
+- I am feeling sad
+- I am upset
+- I'm unhappy
+- I'm having a bad day
+- I want to cry
+- I'm not happy
 
-- Show me tweets with #[Baltimore](tag)
-- Show me tweets that have #[Baltimore](tag)
-- I want some tweets with #[Baltimore](tag)
-- I need tweets with #[TowsonU](tag)
-- I would like to see tweets having #[TowsonU](tag)
-- I need tweets having #[TowsonU](tag)
-- I would like to have tweets with #[TowsonU](tag)
-- Give me tweets having #[TowsonU](tag)
-- Give me tweets with #[TowsonU](tag)
-- Show me contents with #[TowsonU](tag)
-- I want contents with #[Baltimore](tag)
+## intent:account_sleepy
+- I am sleepy
+- I want to sleep
+- I'm falling asleep
+- I'm falling asleep on my feet
+- I'm sleeping
 
-- Show me contents of [cnn](user)
-- Show me tweets of [cnn](user)
-- Show me tweets of @[realDonaldTrump](account)
-- Show me the trending of [cnn](user)
-- I want to know what [cnn](user) is talking about on twitter
-- I want to know contents of [fox](user)
-- I would like to see contents of [fox](user)
-- Give me tweets from @[realDonaldTrump](account)
-- What is happening with [fox](user)
-- What does @[realDonaldTrump](account) tweet
-- What does @[realDonaldTrump](account) say
+## intent:account_tired
+- I'm drained
+- I've overworked
+- I am tired
+- I'm exhausted
+- I grow weary
+- I'm worn out
+- I'm getting tired
+- I feel tired
 
-- Show me [pictures](content) about [cats](topic)
-- Show me some [pictures](content) of [tigers](topic)
-- I want some [pictures](content) about [cats](topic)
-- Give me some [pictures](content) about [cats](topic)
-- Give me some [pictures](content) from [Maryland Zoo](user)
-- Give me [pictures](content) about [puppies](topic)
-- Show me [pictures](content) from @[realDonaldTrump](account)
-- I want some [pictures](content) from @[realDonaldTrump](account)
-- I want some [pictures](content) mentioning about [puppies](topic)
+## intent:account_waiting
+- I'm waiting
+- still waiting
+- I'll wait
+- I can't wait anymore
+- how long do I have to wait
 
-- Show me [images](content) about [cats](topic)
-- Show me some [images](content) of [tigers](topic)
-- I want some [images](content) about [cats](topic)
-- Give me some [images](content) about [cats](topic)
-- Give me some [images](content) from [Maryland Zoo](user)
-- Give me [images](content) about [puppies](topic)
-- Show me [images](content) from @[realDonaldTrump](account)
-- I want some [images](content) from @[realDonaldTrump](account)
-- I want some [images](content) mentioning about [puppies](topic)
-
-- What are [images](content) about [cats](topic)
-- What are [images](content) of [cats](topic)
-- What are some [images](content) of [cats](topic)
-- What are some [images](content) about [cats](topic)
-- What are [images](content) about [dogs](topic)
-- What are [images](content) of [dogs](topic)
-- What are some [images](content) of [dogs](topic)
-- What are some [images](content) about [dogs](topic)
-- What are [images](content) about [mountain](topic)
-- What are [images](content) of [mountain](topic)
-- What are some [images](content) of [mountain](topic)
-- What are some [photos](content) about [mountain](topic)
-- What are [photos](content) about [cats](topic)
-- What are [photos](content) of [cats](topic)
-- What are some [photos](content) of [cats](topic)
-- What are some [photos](content) about [cats](topic)
-- What are [photos](content) about [dogs](topic)
-- What are [photos](content) of [dogs](topic)
-- What are some [photos](content) of [dogs](topic)
-- What are some [photos](content) about [dogs](topic)
-- What are [photos](content) about [mountain](topic)
-- What are [photos](content) of [mountain](topic)
-- What are some [photos](content) of [mountain](topic)
-- What are some [photos](content) about [mountain](topic)
-
-
-- What are some [images](content) from [Maryland Zoo](user)
-- What are [images](content) about [puppies](topic)
-- What are [images](content) from @[realDonaldTrump](account)
-- What are some [images](content) from @[realDonaldTrump](account)
-- What are some [images](content) mentioning about [puppies](topic)
-
-
-
-- Show me tweets from @[united](account) in the [last three weeks](time) mentioning about the [environment](topic)
-- Show me tweets from @[realDonaldTrump](account) during the [last week](time) about the [environment](topic)
-- Show me some [pictures](content) about [lions](topic) from [Maryland Zoo](user) in the [last month](time)
-- I want some tweets in the [last month](time) having #[Baltimore](tag)
-- I want some tweets in the [last 3 days](time) having #[Baltimore](tag)
-- Show me tweets in the [past day](time) having #[Baltimore](tag)
-- Show me the [pictures](content) about [cats](topic) in the [last two days](time)
-- I want some [pictures](content) of [puppies](topic) from @[marylandzoo](account)
-- I want tweets from @[realDonaldTrump](account) about the [trade](content)
-- Give me some [pictures](content) about [tigers](topic) during the [past week](time)
-- Give me some tweets about [tigers](topic) having #[TowsonU](tag)
-- I want some [pictures](content) in the [last three weeks](time)
-- Show me tweets about the [environment](topic)
-- Show me tweets related to the [environment](topic)
-- Give me [pictures](content) from [Maryland Zoo](user)
-- I want tweets about the [environment](topic) from @[marylandzoo](account) in the [last week](time)
-- Show me tweets with #[Baltimore](tag) in the [last three weeks](time)
-- Give me tweets with #[Baltimore](tag) from @[marylandzoo](account)
-- I'd like to have some tweets in the [last month](time) talking about [dogs](topic)
-- I'd like to see some tweets from @[realDonaldTrump](account) about [trade](topic)
-- I would like to see some tweets from [Towson University](user) in the [last week](time) talking about [sports](topic)
-- Show me some [pictures](contents) about the [houses](topic)
-- Give me some tweets mentioning about [trade](topic) in the [last three days](time)
-
-
-
-
-## intent:goodbye <!--- The label of the intent --> 
-- Bye 			<!--- Training examples for intent 'bye'--> 
-- Goodbye
-- See you later
-- Bye bot
-- Goodbye friend
-- bye
-- bye for now
-- catch you later
-- gotta go
-- See you
-- goodnight
-- have a nice day
-- i'm off
-- see you later alligator
-- we'll speak soon
-
-## intent:greet
-- Hi
-- Hey
-- Hi bot
-- Hey bot
-- Hello
-- Good morning
-- hi again
-- hi folks
-- hi Mister
-- hi pal!
-- hi there
-- greetings
-- hello everybody
-- hello is anybody there
-- hello robot
-
-## intent:thanks
-- Thanks
-- Thank you
-- Thank you so much
-- Thanks bot
-- Thanks for that
-- cheers
-- cheers bro
-- ok thanks!
-- perfect thank you
-- thanks a bunch for everything
-- thanks for the help
-- thanks a lot
-- amazing, thanks
-- cool, thanks
-- cool thank you
+## intent:advice
+- what should I do about it
+- any suggestions
+- what do you recommend
+- give me a wise advice
+- I need advice
+- any advice
+- do you have any advice for me
+- advise me
+- what should I do
+- can I ask for your advice
+- can you advise me
+- guide me
+- can you give me advice
+- can you offer any advice
+- give me some advice about
+- give me some good advice
+- help me with advice
+- I could use some advice
+- I need an advice from you
+- I seek your advice
+- what can you recommend
+- what do you suggest
+- what is your advice
 
 ## intent:affirm
 - yes
@@ -177,90 +100,6 @@
 - for sure
 - yes yes yes
 - definitely
-
-
-## intent:name
-- My name is [Juste](name)  <!--- Square brackets contain the value of entity while the text in parentheses is a a label of the entity --> 
-- I am [Josh](name)
-- I'm [Lucy](name)
-- People call me [Greg](name)
-- It's [David](name)
-- Usually people call me [Amy](name)
-- My name is [John](name)
-- You can call me [Sam](name)
-- Please call me [Linda](name)
-- Name name is [Tom](name)
-- I am [Richard](name)
-- I'm [Tracy](name)
-- Call me [Sally](name)
-- I am [Philipp](name)
-- I am [Charlie](name)
-- I am [Charlie](name)
-- I am [Ben](name)
-- Call me [Susan](name)
-- [Lucy](name)
-- [Peter](name)
-- [Mark](name)
-- [Joseph](name)
-- [Tan](name)
-- [Pete](name)
-- [Elon](name)
-- [Penny](name)
-- name is [Andrew](name)
-- I [Lora](name)
-- [Stan](name) is my name
-- [Susan](name) is the name
-- [Ross](name) is my first name
-- [Bing](name) is my last name
-- Few call me as [Angelina](name)
-- Some call me [Julia](name)
-- Everyone calls me [Laura](name)
-- I am [Ganesh](name)
-- My name is [Mike](name)
-- just call me [Monika](name)
-- Few call [Dan](name)
-- You can always call me [Suraj](name)
-- Some will call me [Andrew](name)
-- My name is [Ajay](name)
-- I call [Ding](name)
-- I'm [Partia](name)
-- Please call me [Leo](name)
-- name is [Pari](name)
-- name [Sanjay](name)
-
-
-## intent:joke
-- Can you tell me a joke?
-- I would like to hear a joke
-- Tell me a joke
-- A joke please
-- Tell me a joke please
-- I would like to hear a joke
-- I would loke to hear a joke, please
-- Can you tell jokes?
-- Please tell me a joke
-- I need to hear a joke
-
-
-## intent:introduction
-- tell me about your personality
-- why are you here
-- talk about yourself
-- tell me some stuff about you
-- talk some stuff about yourself
-- I want to know you better
-- I want to know more about you
-- who are you
-- tell me about yourself
-- tell me about you
-- about yourself
-- describe yourself
-- introduce yourself
-- say about you
-- what are you
-- define yourself
-- what is your personality
-- all about you
 
 ## intent:age
 - tell me your age
@@ -271,6 +110,28 @@
 - I'd like to know your age
 - are you 21 years old
 - how old is your platform
+
+## intent:agent_happy
+- are you happy
+- you are happy
+- you're very happy
+- you're really happy
+- you're so happy
+- how happy you are
+- you're extremely happy
+- you're full of happiness
+- are you happy now
+- are you happy today
+- are you happy with me
+
+## intent:angry
+- I'm being mad
+- I'm enraged
+- I'm angry
+- I'm furious
+- I am angry with you
+- I am mad
+- I am mad at you
 
 ## intent:annoying
 - you are annoying me so much
@@ -308,44 +169,80 @@
 - I want the answer now
 - just answer my question
 
-## intent:unhelpful
-- you're not helping me
-- you are bad
-- you're very bad
-- you're really bad
-- you are useless
-- you are horrible
-- you are a waste of time
-- you are disgusting
-- you are lame
-- you are no good
-- you're bad
-- you're awful
-- you are not cool
-- you are not good
-- you are so bad
-- you are so useless
-- you are terrible
-- you are totally useless
-- you are very bad
-- you are waste
-- you're a bad
-- you're not a good
-- you're not very good
-- you're terrible
-- you're the worst
-- you're the worst ever
-- you're worthless
+## intent:are_you_sure
+- are you sure
+- are you sure right now
+- are you sure today
+- are you sure now
+- are you sure tonight
 
-## intent:smart
-- study
-- you should study better
-- you must learn
-- be clever
-- be more clever
-- be smarter
-- be smart
-- get qualified
+## intent:back
+- I am back
+- I'm here again
+- here I am again
+- I got back
+- I came back
+- I have returned
+
+## intent:bad
+- pretty bad
+- not good enough
+- that was lame
+- that was terrible
+- it is bad
+- that's bad
+- this is bad
+- not good
+- I'm afraid it's bad
+- no it's bad
+- that was awful
+- bad
+- so bad
+- this is too bad
+- terrible
+- horrible
+- horrific
+- abysmal
+- it's bad
+- no good
+- that was bad
+- that was horrible
+- that's lame
+- that's not good
+- that's terrible
+- that's too bad
+- this is not good
+- too bad
+- very bad
+- bad girl
+- it's not good
+- not so good
+- it's very bad
+- it's too bad
+- that's not good enough
+- well too bad
+- bad very bad
+- it's so bad
+- really bad
+- it's really bad
+- bad idea
+- that is bad
+- that was not good
+- it's not so good
+- not a good one
+- oh that's not good
+- not too good
+- so lame
+- that's really bad
+- it is too bad
+- bad really bad
+
+## intent:be_back
+- I'll get back to you in a moment
+- be back in 5 minutes
+- I'll be back
+- I promise to come back
+- I'll be back in a few minutes
 
 ## intent:beautiful
 - you're cute
@@ -413,6 +310,16 @@
 - when were you born
 - what's your birthday
 
+## intent:bored
+- that was boring
+- I'm bored
+- bored
+- boring
+- I am getting bored
+- this is boring
+- very boring
+- it bores me
+
 ## intent:boring
 - you are boring
 - you're so boring
@@ -450,47 +357,25 @@
 - you seem to be busy
 - you seem to be very busy
 - you're a busy person
+- I'm overloaded
+- I have no time
+- I'm busy
+- I'm swamped
+- I got things to do
+- how busy I am
+- I got work to do
+- I'm working
+- I don't have time for this
 
-## intent:help
-- I need you to help me
-- I need you to do something for me
-- I need a hand
-- will you help me
-- can you do something for me
-- help me with a problem
-- can you help me
-- help me
-- assistance
-- I need your help
-- I need help
-- you can help me
-- can you help me with something
-- can you help
-- assist
-- can u help me
-- I need some help
-- you help me
-- do you help me
-- can help me
-- could you give me a hand
-- can you help me out
-- need help
-- I need you
-- can you help me now
-- I want your help
-- need your help
-- assist me
-- are you going to help me
-- can you help me with that
-- help
-- I need you right now
-- would you help me
-- can you assist me
-- sos
-- do you want to help me
-- please help me
-- can you help us
-- do me a favor
+## intent:cant_sleep
+- I'm insomnious
+- I'm sleepless
+- I can't get any sleep
+- I can't sleep
+- I can't fall asleep
+- I can't get to sleep
+- I can't get no sleep
+- I'm insomniac
 
 ## intent:chatbot
 - you are chatbot
@@ -501,42 +386,6 @@
 - are you a robot
 - are you a program
 - you're a robot
-
-## intent:smart
-- you are so intelligent
-- you are a genius
-- smart
-- brilliant
-- clever
-- you are clever
-- you are so brainy
-- you're really smart
-- you're really brainy
-- you know a lot
-- you know a lot of things
-- you have a lot of knowledge
-- you know so much
-- how smart you are
-- how brainy you are
-- how clever you are
-- how brilliant you are
-- you are intelligent
-- you are qualified
-- you are really smart
-- you're very smart
-- you are so smart
-- you are too smart
-- you are very clever
-- you are very intelligent
-- you are very smart
-- you're intelligent
-- you're a genius
-- you're a smart cookie
-- you're clever
-- you're pretty smart
-- you're qualified
-- why are you so smart
-- you are so clever
 
 ## intent:crazy
 - you're nuts
@@ -557,6 +406,33 @@
 - you are insane
 - you are mad
 
+## intent:doing_well
+- I am good
+- I'm doing just great
+- I'm doing fine
+- I'm good
+- I'm doing good
+- I'm great thanks
+
+## intent:dont_care
+- I don't care
+- I shouldn't care about this
+- whatever
+- I do not care
+- I don't care at all
+- not caring
+- not care at all
+- don't care at all
+- not caring at all
+
+## intent:excited
+- I am excited
+- I'm really excited
+- how excited I am
+- I'm thrilled
+- I'm excited about working with you
+- I'm excited to start our friendship
+
 ## intent:fired
 - you are fired
 - I fire you
@@ -574,6 +450,45 @@
 - I'm firing you
 - you are dismissed
 
+## intent:friend
+- I want to have a friend like you
+- we are the best friends ever
+- are we friends
+- I want to be your friend
+- I am your friend
+- we are best friends
+- you are my friend
+- you are my best friend
+- you are my bestie
+- you're my dear friend
+- you're my childhood friend
+- you and me are friends
+- are we best friends
+- are we still friends
+- are you my best friend
+- are you my friend
+- we are friends
+- you are a good friend
+- you are my good friend
+- you are my only friend
+- be my friend
+- will you be my friend
+- can you be my friend
+- can we be friends
+- do you want to be my friend
+- will you be my best friend
+- can you be my best friend
+- let's be friends
+- do you want to be my best friend
+- would you like to be my friend
+- I want you to be my friend
+- can we be best friends
+- would you be my friend
+- could you be my friend
+- want to be my friend
+- be my best friend
+- can we be best friends
+
 ## intent:funny
 - you make me laugh a lot
 - you are hilarious
@@ -590,6 +505,17 @@
 - you are so funny
 - you are very funny
 - that was funny
+
+## intent:go_to_bed
+- let's go to bed
+- I'd like to go to bed
+- is it time for bed yet
+- it's time to go to bed
+- time for us to go to bed
+- I'm going to bed
+- I'm a little tired and I want to go to bed
+- it's bed time
+- going to bed now
 
 ## intent:good
 - you are very helpful
@@ -637,245 +563,6 @@
 - I want to let everyone know that you are awesome
 - let's tell everyone that you are awesome
 - you are really amazing
-
-## intent:agent_happy
-- are you happy
-- you are happy
-- you're very happy
-- you're really happy
-- you're so happy
-- how happy you are
-- you're extremely happy
-- you're full of happiness
-- are you happy now
-- are you happy today
-- are you happy with me
-
-## intent:hobby
-- what do you do for fun
-- what's your hobby
-- tell me about your hobby
-- do you have a hobby
-- what about your hobby
-- your hobby
-- what are your hobbies
-
-## intent:hungry
-- do you want to eat
-- are you hungry
-- would you like to eat something
-- you are hungry
-- you're so hungry
-- you're very hungry
-- you might be hungry
-- you're really hungry
-
-## intent:marry
-- let's get married
-- would you like to marry me
-- marry me
-- I love you marry me
-- marry me please
-- we should marry
-- I want to marry you
-- you are my wife
-- be my husband
-
-## intent:friend
-- I want to have a friend like you
-- we are the best friends ever
-- are we friends
-- I want to be your friend
-- I am your friend
-- we are best friends
-- you are my friend
-- you are my best friend
-- you are my bestie
-- you're my dear friend
-- you're my childhood friend
-- you and me are friends
-- are we best friends
-- are we still friends
-- are you my best friend
-- are you my friend
-- we are friends
-- you are a good friend
-- you are my good friend
-- you are my only friend
-- be my friend
-- will you be my friend
-- can you be my friend
-- can we be friends
-- do you want to be my friend
-- will you be my best friend
-- can you be my best friend
-- let's be friends
-- do you want to be my best friend
-- would you like to be my friend
-- I want you to be my friend
-- can we be best friends
-- would you be my friend
-- could you be my friend
-- want to be my friend
-- be my best friend
-- can we be best friends
-
-## intent:occupation
-- do you work
-- where do you work
-- where you work
-- where is your work
-- where is your office
-- where is your office location
-- your office location
-- where is your office located
-- what is your work
-
-## intent:origin
-- were you born here
-- where were you born
-- what is your country
-- where are you from
-- where do you come from
-- where did you come from
-- where have you been born
-- from where are you
-- are you from far aways
-- what's your homeland
-- your homeland is
-
-## intent:ready
-- are you ready
-- are you ready right now
-- are you ready today
-- are you ready now
-- are you ready tonight
-- were you ready
-- have you been ready
-
-## intent:real
-- you are real
-- you are not fake
-- are you real
-- you are so real
-- I think you are real
-- I don't think you're fake
-- I suppose you're real
-- glad you're real
-- are you a real person
-- are you a real human
-- you are a real person
-- you are not real
-
-## intent:residence
-- where do you live
-- in which city do you live
-- your residence
-- your house
-- your home
-- your hometown
-- what is your hometown
-- is it your hometown
-- where is your hometown
-- tell me about your city
-- what is your city
-- what is your residence
-- what is your town
-- what's your city
-- what's your home
-- where is your home
-- where is your residence
-- where's your home
-- where's your hometown
-- where's your house
-- where you live
-- your city
-- your town
-
-
-## intent:are_you_sure
-- are you sure
-- are you sure right now
-- are you sure today
-- are you sure now
-- are you sure tonight
-
-## intent:talk
-- why aren't you talking to me
-- do you want to chat with me
-- will you talk to me
-- talk to me
-- are you going to talk to me
-- are you talking to me
-- can you chat with me
-- can you speak with me
-- can you talk to me
-- can you talk with me
-- say
-- talk
-- chat with me
-- just chat with me
-- speak to me
-- speak with me
-- talk with me
-- why don't you talk to me
-- you can talk to me
-
-
-## intent:bad
-- pretty bad
-- not good enough
-- that was lame
-- that was terrible
-- it is bad
-- that's bad
-- this is bad
-- not good
-- I'm afraid it's bad
-- no it's bad
-- that was awful
-- bad
-- so bad
-- this is too bad
-- terrible
-- horrible
-- horrific
-- abysmal
-- it's bad
-- no good
-- that was bad
-- that was horrible
-- that's lame
-- that's not good
-- that's terrible
-- that's too bad
-- this is not good
-- too bad
-- very bad
-- bad girl
-- it's not good
-- not so good
-- it's very bad
-- it's too bad
-- that's not good enough
-- well too bad
-- bad very bad
-- it's so bad
-- really bad
-- it's really bad
-- bad idea
-- that is bad
-- that was not good
-- it's not so good
-- not a good one
-- oh that's not good
-- not too good
-- so lame
-- that's really bad
-- it is too bad
-- bad really bad
-
-## intent:good
 - so cool
 - cool
 - that is good
@@ -973,200 +660,22 @@
 - it's very good
 - that's fine
 
-## intent:no_problem
-- no worries
-- no probs
-- no problem
-- there's no problem
-- sure no problem
-- no problem about that
-- don't worry
-- don't worry there's no problem
-
-## intent:thanks
-- you helped a lot thank you
-- appreciate your help
-- cheers
-- thank you
-- thanks
-- thanks a lot
-- terrific thank you
-- great thank you
-- thanks so much
-- thank you so much
-- thanks for your help
-- thank you for your help
-- nice thank you
-- I appreciate it
-- I thank you
-- thank you that will be all
-- thanks buddy
-- thanks love
-- thank you my friend
-- well thanks
-- very good thank you
-- good thanks
-- thanks again
-- thank you again
-- all thank you
-- alright thank you
-- alright thanks
-- no thank you that's all
-- perfect thank you
-- so nice of you
-- well thank you
-- well thanks
-- thnx
-- thank you
-- thanx
-
-## intent:welcome
-- that's my pleasure
-- my pleasure
-- anytime
-- welcome
-- you're welcome
-- sure welcome
-- welcome here
-- you're so welcome
-- anything you want
-
-## intent:well_done
-- good job
-- great job
-- way to go
-- well done
-- nice work
-- great work
-- amazing work
-- bravo
-- good work
-
-## intent:wait
-- wait a second
-- could you wait
-- wait please
-- hold on
-- wait
-- oh wait
-- wait hold on
-- don't rush
-
-## intent:hug
-- wanna hug
-- hug you
-- do you want a hug
-- may I hug you
-- could you give me a hug
-- I want a hug
-- hug
-- hug me
-- hugged
-- you hugged
-- hugging
-- hugging me
-- hugged me
-- want a hug
-- a hug
-
-## intent:dont_care
-- I don't care
-- I shouldn't care about this
-- whatever
-- I do not care
-- I don't care at all
-- not caring
-- not care at all
-- don't care at all
-- not caring at all
-
-## intent:sorry
-- excuse me
-- apologise
-- I apologize
-- sorry
-- I'm sorry
-- I am so sorry
-- my apologies
-- apologies
-- apologies to me
-- apology
-- excuse
-- I beg your pardon
-- pardon
-- I said sorry
-- I am really sorry
-- forgive me
-- sorry about that
-- sorry about this
-- really sorry
-- very sorry
-- ok sorry
-- I want to say sorry
-- alright I'm sorry
-- okay I'm sorry
-
-## intent:what_you_mean
-- what exactly do you mean
-- what do you mean
-- is that what you mean
-- what do you mean exactly
-- but what do you mean
-
-## intent:wrong
-- that was wrong
-- that's not what I asked
-- that's wrong
-- wrong
-- it is not right
-- that's not right
-- it's wrong
-- that is incorrect
-- incorrect
-- not correct
-- you are wrong
-- not right
-
-## intent:ha_ha
-- huh
-- lol
-- xd
-- ha ha
-- ahahah
-- ahah lol
-- laughing out loud
-- LMAO
-- that's funny
-- ah
-- ah ah ah
-- ahah
-- ahaha
-- ahahaha
-- ha
-- ha ha ha
-- ha ha ha ha
-- hah
-- haha
-- haha funny
-- haha haha haha
-- haha that's funny
-- haha very funny
-- hahaha
-- hahaha funny
-- hahaha very funny
-- he
-- hehe
-- hehehe
-- lmao
-
-## intent:wow
-- wow
-- wow wow
-- wow wow wow
-- wooow
-- woah
-
 ## intent:goodbye
+- Bye
+- Goodbye
+- See you later
+- Bye bot
+- Goodbye friend
+- bye
+- bye for now
+- catch you later
+- gotta go
+- See you
+- goodnight
+- have a nice day
+- i'm off
+- see you later alligator
+- we'll speak soon
 - okay see you later
 - hope to see you later
 - bye for now
@@ -1231,7 +740,7 @@
 - have a good night
 - good night to you
 - thank you good night
--  bye good night
+- bye good night
 - good night bye
 - bye good night
 - good good night
@@ -1246,6 +755,113 @@
 - night
 - have a good night
 
+## intent:greet
+- Hi
+- Hey
+- Hi bot
+- Hey bot
+- Hello
+- Good morning
+- hi again
+- hi folks
+- hi Mister
+- hi pal!
+- hi there
+- greetings
+- hello everybody
+- hello is anybody there
+- hello robot
+
+## intent:ha_ha
+- huh
+- lol
+- xd
+- ha ha
+- ahahah
+- ahah lol
+- laughing out loud
+- LMAO
+- that's funny
+- ah
+- ah ah ah
+- ahah
+- ahaha
+- ahahaha
+- ha
+- ha ha ha
+- ha ha ha ha
+- hah
+- haha
+- haha funny
+- haha haha haha
+- haha that's funny
+- haha very funny
+- hahaha
+- hahaha funny
+- hahaha very funny
+- he
+- hehe
+- hehehe
+- lmao
+
+## intent:happy
+- I am happy
+- I'm happy to see you
+- happy
+- if you're happy then I'm happy
+- I'm happy for you
+- I'm happy to help
+- I'm happy to see you
+
+## intent:help
+- I need you to help me
+- I need you to do something for me
+- I need a hand
+- will you help me
+- can you do something for me
+- help me with a problem
+- can you help me
+- help me
+- assistance
+- I need your help
+- I need help
+- you can help me
+- can you help me with something
+- can you help
+- assist
+- can u help me
+- I need some help
+- you help me
+- do you help me
+- can help me
+- could you give me a hand
+- can you help me out
+- need help
+- I need you
+- can you help me now
+- I want your help
+- need your help
+- assist me
+- are you going to help me
+- can you help me with that
+- help
+- I need you right now
+- would you help me
+- can you assist me
+- sos
+- do you want to help me
+- please help me
+- can you help us
+- do me a favor
+
+## intent:hobby
+- what do you do for fun
+- what's your hobby
+- tell me about your hobby
+- do you have a hobby
+- what about your hobby
+- your hobby
+- what are your hobbies
 
 ## intent:how_are_you
 - how is your morning so far
@@ -1289,183 +905,77 @@
 - how are you doing this morning
 - how is your day going
 
-## intent:nice_to_meet
-- nice to meet you
-- it was nice meeting you
-- it was very nice to meet you
-- good to know each other
-- glad to meet you
-- nice meeting you
-- nice to meet you too
-- pleased to meet you
-- pleasure to meet you
-- pleasure to meet you too
+## intent:hug
+- wanna hug
+- hug you
+- do you want a hug
+- may I hug you
+- could you give me a hug
+- I want a hug
+- hug
+- hug me
+- hugged
+- you hugged
+- hugging
+- hugging me
+- hugged me
+- want a hug
+- a hug
 
-## intent:nice_to_see
-- it's nice to see you
-- lovely to see you
-- I'm glad to see you
-- great to see you
-- it's good to see you
-- glad to see you
-- how good it is to see you
-- always a pleasure to see you
-- nice to see you
-- good to see you
-- great to see you again
-- great to see you too
-- I am glad to see you again
-- nice to see you again
-- glad to see you too
-- good to see you again
-- it's good to see you too
+## intent:hungry
+- do you want to eat
+- are you hungry
+- would you like to eat something
+- you are hungry
+- you're so hungry
+- you're very hungry
+- you might be hungry
+- you're really hungry
 
-## intent:nice_to_talk
-- it's been so nice to talk to you
-- it's been a pleasure talking to you
-- nice to talk to you
-- it's nice to talk to you
-- nice talking to you
-- it is nice talking to you
-- how nice it is to talk to you
+## intent:introduction
+- tell me about your personality
+- why are you here
+- talk about yourself
+- tell me some stuff about you
+- talk some stuff about yourself
+- I want to know you better
+- I want to know more about you
+- who are you
+- tell me about yourself
+- tell me about you
+- about yourself
+- describe yourself
+- introduce yourself
+- say about you
+- what are you
+- define yourself
+- what is your personality
+- all about you
 
-## intent:whatsup
-- what is on your mind
-- what's happened
-- what is up
-- what's up
-- whazzup
-- good what's up
-- I said what's up
-- then what's up
-- what's shaking
-- wassup
-- what is going on
-- what is happening
-- what's cracking
-- what's cooking
-- hey what's up
-- what's up today
+## intent:joke
+- Can you tell me a joke?
+- I would like to hear a joke
+- Tell me a joke
+- A joke please
+- Tell me a joke please
+- I would like to hear a joke
+- I would loke to hear a joke, please
+- Can you tell jokes?
+- Please tell me a joke
+- I need to hear a joke
 
-## intent:angry
-- I'm being mad
-- I'm enraged
-- I'm angry
-- I'm furious
-- I am angry with you
-- I am mad
-- I am mad at you
-
-## intent:back
-- I am back
-- I'm here again
-- here I am again
-- I got back
-- I came back
-- I have returned
-
-## intent:bored
-- that was boring
-- I'm bored
-- bored
-- boring
-- I am getting bored
-- this is boring
-- very boring
-- it bores me
-
-## intent:busy
-- I'm overloaded
-- I have no time
-- I'm busy
-- I'm swamped
-- I got things to do
-- how busy I am
-- I got work to do
-- I'm working
-- I don't have time for this
-
-## intent:cant_sleep
-- I'm insomnious
-- I'm sleepless
-- I can't get any sleep
-- I can't sleep
-- I can't fall asleep
-- I can't get to sleep
-- I can't get no sleep
-- I'm insomniac
-
-## intent:wanna_talk
-- bad time for talking
-- I don't want to talk
-- let's not talk
-- I'm not talking to you anymore
-- I don't want to talk to you
-- let's stop talking for a minute
-- I'm not in the mood for chatting
-
-## intent:excited
-- I am excited
-- I'm really excited
-- how excited I am
-- I'm thrilled
-- I'm excited about working with you
-- I'm excited to start our friendship
-
-## intent:go_to_bed
-- let's go to bed
-- I'd like to go to bed
-- is it time for bed yet
-- it's time to go to bed
-- time for us to go to bed
-- I'm going to bed
-- I'm a little tired and I want to go to bed
-- it's bed time
-- going to bed now
-
-## intent:doing_well
-- I am good
-- I'm doing just great
-- I'm doing fine
-- I'm good
-- I'm doing good
-- I'm great thanks
-
-## intent:happy
-- I am happy
-- I'm happy to see you
-- happy
-- if you're happy then I'm happy
-- I'm happy for you
-- I'm happy to help
-- I'm happy to see you
-
-## intent:my_birthday
-- it is my birthday
-- I'm celebrating my birthday today
-- today is my birthday
-- it's my birthday today
-- I was born today
-- it's my b-day
-
-## intent:user_here
-- I am here
-- here I am
-- I'm right here
-- I'm already here
-- can you tell if I'm here or not
-
-## intent:user_joking
-- I am joking
-- I'm kidding
-- I'm just being funny
-- it was a joke
-- I was just joking
-- it's a joke
-- joking
-- just kidding
-- kidding
-- I'm just playing with you
+## intent:lets_talk
+- let's discuss something
+- let's have a discussion
+- can I speak
+- can I start speaking
+- can we talk
+- speak with me
+- let's talk
+- I want to talk to you
+- I need to talk to you
+- I want to speak with you
+- can we chat
 
 ## intent:like_agent
 - I like you the way you are
@@ -1546,22 +1056,6 @@
 - I really really really really like you
 - I like you just the way you are
 
-## intent:user_lonely
-- I am lonely
-- I'm very lonely
-- I'm so lonely
-- I'm really lonely
-- I am feeling lonely
-- I feel lonely
-
-## intent:user_looks_like
-- what do I look like
-- how do I look
-- do I look good
-- do you know what I look like
-- can you see what I look like
-- what do you think I look like
-
 ## intent:love
 - I love you
 - love you
@@ -1573,6 +1067,17 @@
 - loving you
 - you know I love you
 
+## intent:marry
+- let's get married
+- would you like to marry me
+- marry me
+- I love you marry me
+- marry me please
+- we should marry
+- I want to marry you
+- you are my wife
+- be my husband
+
 ## intent:miss_you
 - I miss you
 - missing you
@@ -1582,48 +1087,287 @@
 - I missed you
 - I've missed you
 
-## intent:advice
-- what should I do about it
-- any suggestions
-- what do you recommend
-- give me a wise advice
-- I need advice
-- any advice
-- do you have any advice for me
-- advise me
-- what should I do
-- can I ask for your advice
-- can you advise me
-- guide me
-- can you give me advice
-- can you offer any advice
-- give me some advice about
-- give me some good advice
-- help me with advice
-- I could use some advice
-- I need an advice from you
-- I seek your advice
-- what can you recommend
-- what do you suggest
-- what is your advice
+## intent:my_birthday
+- it is my birthday
+- I'm celebrating my birthday today
+- today is my birthday
+- it's my birthday today
+- I was born today
+- it's my b-day
 
-## intent:user_sad
-- I am sad
-- I'm grieving
-- I am depressed
-- I am feeling sad
-- I am upset
-- I'm unhappy
-- I'm having a bad day
-- I want to cry
-- I'm not happy
+## intent:name
+- My name is [Juste](name)
+- I am [Josh](name)
+- I'm [Lucy](name)
+- People call me [Greg](name)
+- It's [David](name)
+- Usually people call me [Amy](name)
+- My name is [John](name)
+- You can call me [Sam](name)
+- Please call me [Linda](name)
+- Name name is [Tom](name)
+- I am [Richard](name)
+- I'm [Tracy](name)
+- Call me [Sally](name)
+- I am [Philipp](name)
+- I am [Charlie](name)
+- I am [Charlie](name)
+- I am [Ben](name)
+- Call me [Susan](name)
+- [Lucy](name)
+- [Peter](name)
+- [Mark](name)
+- [Joseph](name)
+- [Tan](name)
+- [Pete](name)
+- [Elon](name)
+- [Penny](name)
+- name is [Andrew](name)
+- I [Lora](name)
+- [Stan](name) is my name
+- [Susan](name) is the name
+- [Ross](name) is my first name
+- [Bing](name) is my last name
+- Few call me as [Angelina](name)
+- Some call me [Julia](name)
+- Everyone calls me [Laura](name)
+- I am [Ganesh](name)
+- My name is [Mike](name)
+- just call me [Monika](name)
+- Few call [Dan](name)
+- You can always call me [Suraj](name)
+- Some will call me [Andrew](name)
+- My name is [Ajay](name)
+- I call [Ding](name)
+- I'm [Partia](name)
+- Please call me [Leo](name)
+- name is [Pari](name)
+- name [Sanjay](name)
 
-## intent:user_sleepy
-- I am sleepy
-- I want to sleep
-- I'm falling asleep
-- I'm falling asleep on my feet
-- I'm sleeping
+## intent:nice_to_meet
+- nice to meet you
+- it was nice meeting you
+- it was very nice to meet you
+- good to know each other
+- glad to meet you
+- nice meeting you
+- nice to meet you too
+- pleased to meet you
+- pleasure to meet you
+- pleasure to meet you too
+
+## intent:nice_to_see
+- it's nice to see you
+- lovely to see you
+- I'm glad to see you
+- great to see you
+- it's good to see you
+- glad to see you
+- how good it is to see you
+- always a pleasure to see you
+- nice to see you
+- good to see you
+- great to see you again
+- great to see you too
+- I am glad to see you again
+- nice to see you again
+- glad to see you too
+- good to see you again
+- it's good to see you too
+
+## intent:nice_to_talk
+- it's been so nice to talk to you
+- it's been a pleasure talking to you
+- nice to talk to you
+- it's nice to talk to you
+- nice talking to you
+- it is nice talking to you
+- how nice it is to talk to you
+
+## intent:no_problem
+- no worries
+- no probs
+- no problem
+- there's no problem
+- sure no problem
+- no problem about that
+- don't worry
+- don't worry there's no problem
+
+## intent:occupation
+- do you work
+- where do you work
+- where you work
+- where is your work
+- where is your office
+- where is your office location
+- your office location
+- where is your office located
+- what is your work
+
+## intent:origin
+- were you born here
+- where were you born
+- what is your country
+- where are you from
+- where do you come from
+- where did you come from
+- where have you been born
+- from where are you
+- are you from far aways
+- what's your homeland
+- your homeland is
+
+## intent:ready
+- are you ready
+- are you ready right now
+- are you ready today
+- are you ready now
+- are you ready tonight
+- were you ready
+- have you been ready
+
+## intent:real
+- you are real
+- you are not fake
+- are you real
+- you are so real
+- I think you are real
+- I don't think you're fake
+- I suppose you're real
+- glad you're real
+- are you a real person
+- are you a real human
+- you are a real person
+- you are not real
+
+## intent:residence
+- where do you live
+- in which city do you live
+- your residence
+- your house
+- your home
+- your hometown
+- what is your hometown
+- is it your hometown
+- where is your hometown
+- tell me about your city
+- what is your city
+- what is your residence
+- what is your town
+- what's your city
+- what's your home
+- where is your home
+- where is your residence
+- where's your home
+- where's your hometown
+- where's your house
+- where you live
+- your city
+- your town
+
+## intent:see_again
+- I'd like to see you again
+- I hope to see you again
+- would be nice to see you again
+- that'd be great to see you again
+- I'd be happy to see you again
+- I'll miss you
+- can I see you again
+
+## intent:smart
+- study
+- you should study better
+- you must learn
+- be clever
+- be more clever
+- be smarter
+- be smart
+- get qualified
+- you are so intelligent
+- you are a genius
+- smart
+- brilliant
+- clever
+- you are clever
+- you are so brainy
+- you're really smart
+- you're really brainy
+- you know a lot
+- you know a lot of things
+- you have a lot of knowledge
+- you know so much
+- how smart you are
+- how brainy you are
+- how clever you are
+- how brilliant you are
+- you are intelligent
+- you are qualified
+- you are really smart
+- you're very smart
+- you are so smart
+- you are too smart
+- you are very clever
+- you are very intelligent
+- you are very smart
+- you're intelligent
+- you're a genius
+- you're a smart cookie
+- you're clever
+- you're pretty smart
+- you're qualified
+- why are you so smart
+- you are so clever
+
+## intent:sorry
+- excuse me
+- apologise
+- I apologize
+- sorry
+- I'm sorry
+- I am so sorry
+- my apologies
+- apologies
+- apologies to me
+- apology
+- excuse
+- I beg your pardon
+- pardon
+- I said sorry
+- I am really sorry
+- forgive me
+- sorry about that
+- sorry about this
+- really sorry
+- very sorry
+- ok sorry
+- I want to say sorry
+- alright I'm sorry
+- okay I'm sorry
+
+## intent:stop
+- /stop
+
+## intent:talk
+- why aren't you talking to me
+- do you want to chat with me
+- will you talk to me
+- talk to me
+- are you going to talk to me
+- are you talking to me
+- can you chat with me
+- can you speak with me
+- can you talk to me
+- can you talk with me
+- say
+- talk
+- chat with me
+- just chat with me
+- speak to me
+- speak with me
+- talk with me
+- why don't you talk to me
+- you can talk to me
 
 ## intent:testing_agent
 - test
@@ -1635,48 +1379,338 @@
 - testing chatbot
 - testing
 
-## intent:user_tired
-- I'm drained
-- I've overworked
-- I am tired
-- I'm exhausted
-- I grow weary
-- I'm worn out
-- I'm getting tired
-- I feel tired
+## intent:thanks
+- Thanks
+- Thank you
+- Thank you so much
+- Thanks bot
+- Thanks for that
+- cheers
+- cheers bro
+- ok thanks!
+- perfect thank you
+- thanks a bunch for everything
+- thanks for the help
+- thanks a lot
+- amazing, thanks
+- cool, thanks
+- cool thank you
+- you helped a lot thank you
+- appreciate your help
+- cheers
+- thank you
+- thanks
+- thanks a lot
+- terrific thank you
+- great thank you
+- thanks so much
+- thank you so much
+- thanks for your help
+- thank you for your help
+- nice thank you
+- I appreciate it
+- I thank you
+- thank you that will be all
+- thanks buddy
+- thanks love
+- thank you my friend
+- well thanks
+- very good thank you
+- good thanks
+- thanks again
+- thank you again
+- all thank you
+- alright thank you
+- alright thanks
+- no thank you that's all
+- perfect thank you
+- so nice of you
+- well thank you
+- well thanks
+- thnx
+- thank you
+- thanx
 
-## intent:user_waiting
-- I'm waiting
-- still waiting
-- I'll wait
-- I can't wait anymore
-- how long do I have to wait
+## intent:tweet_search
+- Show me all tweets having [#TowsonU](topic)
+- Show me what [cnn](account) is talking about on twitter
+- Show me what [fox](account) is talking about on twitter
+- Show me what [abc](account) is talking about on twitter
+- Show me some fun [pictures](content) about [puppies](topic)
+- Show me some fun [images](content) about [puppies](topic)
+- Show me tweets from [@united](account) in the [last three weeks](time) mentioning about the [environment](topic)
+- I am interested in [Trump](account)'s tweets
+- I am interested in [Trump](account)'s tweets about [immigration](topic)
+- Show me tweets with [#Baltimore](topic)
+- Show me tweets that have [#Baltimore](topic)
+- I want some tweets with [#Baltimore](topic)
+- I need tweets with [#TowsonU](topic)
+- I would like to see tweets having [#TowsonU](topic)
+- I need tweets having [#TowsonU](topic)
+- I would like to have tweets with [#TowsonU](topic)
+- Give me tweets having [#TowsonU](topic)
+- Give me tweets with [#TowsonU](topic)
+- Show me contents with [#TowsonU](topic)
+- I want contents with [#Baltimore](topic)
+- Show me contents of [cnn](account)
+- Show me tweets of [cnn](account)
+- Show me tweets of [@realDonaldTrump](account)
+- Show me the trending of [cnn](account)
+- I want to know what [cnn](account) is talking about on twitter
+- I want to know contents of [fox](account)
+- I would like to see contents of [fox](account)
+- Give me tweets from [@realDonaldTrump](account)
+- What is happening with [fox](account)
+- What does [@realDonaldTrump](account) tweet
+- What does [@realDonaldTrump](account) say
+- Show me [pictures](content) about [cats](topic)
+- Show me some [pictures](content) of [tigers](topic)
+- I want some [pictures](content) about [cats](topic)
+- Give me some [pictures](content) about [cats](topic)
+- Give me some [pictures](content) from [Maryland Zoo](account)
+- Give me [pictures](content) about [puppies](topic)
+- Show me [pictures](content) from [@realDonaldTrump](account)
+- I want some [pictures](content) from [@realDonaldTrump](account)
+- I want some [pictures](content) mentioning about [puppies](topic)
+- Show me [images](content) about [cats](topic)
+- Show me some [images](content) of [tigers](topic)
+- I want some [images](content) about [cats](topic)
+- Give me some [images](content) about [cats](topic)
+- Give me some [images](content) from [Maryland Zoo](account)
+- Give me [images](content) about [puppies](topic)
+- Show me [images](content) from [@realDonaldTrump](account)
+- I want some [images](content) from [@realDonaldTrump](account)
+- I want some [images](content) mentioning about [puppies](topic)
+- What are [images](content) about [cats](topic)
+- What are [images](content) of [cats](topic)
+- What are some [images](content) of [cats](topic)
+- What are some [images](content) about [cats](topic)
+- What are [images](content) about [dogs](topic)
+- What are [images](content) of [dogs](topic)
+- What are some [images](content) of [dogs](topic)
+- What are some [images](content) about [dogs](topic)
+- What are [images](content) about [mountain](topic)
+- What are [images](content) of [mountain](topic)
+- What are some [images](content) of [mountain](topic)
+- What are some [photos](content) about [mountain](topic)
+- What are [photos](content) about [cats](topic)
+- What are [photos](content) of [cats](topic)
+- What are some [photos](content) of [cats](topic)
+- What are some [photos](content) about [cats](topic)
+- What are [photos](content) about [dogs](topic)
+- What are [photos](content) of [dogs](topic)
+- What are some [photos](content) of [dogs](topic)
+- What are some [photos](content) about [dogs](topic)
+- What are [photos](content) about [mountain](topic)
+- What are [photos](content) of [mountain](topic)
+- What are some [photos](content) of [mountain](topic)
+- What are some [photos](content) about [mountain](topic)
+- What are some [images](content) from [Maryland Zoo](account)
+- What are [images](content) about [puppies](topic)
+- What are [images](content) from [@realDonaldTrump](account)
+- What are some [images](content) from [@realDonaldTrump](account)
+- What are some [images](content) mentioning about [puppies](topic)
+- Show me tweets from [@united](account) in the [last three weeks](time) mentioning about the [environment](topic)
+- Show me tweets from [@realDonaldTrump](account) during the [last week](time) about the [environment](topic)
+- Show me some [pictures](content) about [lions](topic) from [Maryland Zoo](account) in the [last month](time)
+- I want some tweets in the [last month](time) having [#Baltimore](topic)
+- I want some tweets in the [last 3 days](time) having [#Baltimore](topic)
+- Show me tweets in the [past day](time) having [#Baltimore](topic)
+- Show me the [pictures](content) about [cats](topic) in the [last two days](time)
+- I want some [pictures](content) of [puppies](topic) from [@marylandzoo](account)
+- I want tweets from [@realDonaldTrump](account) about the [trade](content)
+- Give me some [pictures](content) about [tigers](topic) during the [past week](time)
+- Give me some tweets about [tigers](topic) having [#TowsonU](topic)
+- I want some [pictures](content) in the [last three weeks](time)
+- Show me tweets about the [environment](topic)
+- Show me tweets related to the [environment](topic)
+- Give me [pictures](content) from [Maryland Zoo](account)
+- I want tweets about the [environment](topic) from [@marylandzoo](account) in the [last week](time)
+- Show me tweets with [#Baltimore](topic) in the [last three weeks](time)
+- Give me tweets with [#Baltimore](topic) from [@marylandzoo](account)
+- I'd like to have some tweets in the [last month](time) talking about [dogs](topic)
+- I'd like to see some tweets from [@realDonaldTrump](account) about [trade](topic)
+- I would like to see some tweets from [Towson University](account) in the [last week](time) talking about [sports](topic)
+- Show me some [pictures](content) about the [houses](topic)
+- Give me some tweets mentioning about [trade](topic) in the [last three days](time)
+- Show me some [pictures](content) about [wine](topic).
+- I am interested in some [photos](content) of [beach](topic).
+- Now show me some [images](content) about [telephones](topic).
+- What is the [president](account) talking about on [Twitter](name)?
+- Show me tweets about [automobile](topic) within [3 weeks](time).
+- Show me all tweets containing [#energy](topic).
+- Show me all tweets that have #protest.
+- Show me all tweets that have [#protest](topic).
+- Show me tweets within [6 months](time) having [#DeepLearning](topic).
+- Let's look at [photos](content) about [football](topic) within [1 year](time).
+- Show me all tweets from [Google](account).
+- Let's find some tweets about [climate change](topic).
+- Show me lastest tweets about [safety](topic) in [Baltimore](name).
+- Find some tweets about [culture](topic).
+- Let's find some tweets about [baby](topic).
+- What about tweets of [Johns Hopkins](name)?
+- Let's find some [photos](content) of [Johns](name) [Hopkins](name).
+- What is [@Google](account) talking about on Twitter?
+- What is [@United](account) tweeting?
+- What is [@tesla](account) talking about on Twitter?
+- What is [@costco](account) talking about on Twitter?
+- Show me [pictures](content) that [@Google](account) tweeted on Twitter.
+- I want to learn about tweets containing [#piano](topic).
+- I am interested in what [@google](account) is talking about on Twitter.
+- I am interested in what [@tesla](account) is talking about on Twitter.
+- What is [@google](account) talking about on Twitter?
+- What is [@United](account) talking about on Twitter?
+- What is [@Towson](account) talking about on Twitter?
+- What is [@America](account) talking about on Twitter?
+- What is [@dogs](account) talking about on Twitter?
+- What is [@ubuntu](account) talking about on Twitter?
+- What is [@hopelessProgrammer](account) talking about on Twitter?
+- What is [@HolidayInn](account) talking about on Twitter?
+- Show me tweets containing [#TowsonU](topic) within [2 months](time).
+- Show me tweets containing [#energy](topic) within [3 weeks](time).
+- Show me tweets containing [#dogs](topic) within [last 3 days](time).
+- Show me some tweets about [dogs](topic).
+- Show me some tweets about [cars](topic).
+- Show me some tweets about [clothes](topic).
+- What is [Walmart](account) talking about on Twitter?
+- What is [Costco](account) talking about on Twitter?
+- What is [Cook](account) talking about on Twitter?
+- Show me some [pictures](content) of [wine](topic).
+- Show me some [pictures](content) of [wine](topic).
+- Show me some [pictures](content) of [cars](topic).
+- Show me some [pictures](content) of [buildings](topic).
+- What is [@Deron](account) talking about on Twitter?
+- What is [@GE](account) talking about on Twitter?
+- What is [@Canon](account) talking about on Twitter?
+- What is [@Bruker](account) talking about on Twitter?
+- What is [Canon](account) talking about on Twitter?
+- What is [Walmart](account) talking about on Twitter?
+- What is [@Montreal](account) talking about on Twitter?
+- What is [Montreal](account) talking about on Twitter?
+- Show me tweets containing [#Earth](topic) within [10 days](time).
+- What is @google talking about on Twitter?
+- What is [@google](account) talking about on Twitter?
+- What is [@Marriot](account) talking about on Twitter?
+- Show me tweets containing [#McGill](topic) within [7 days](time).
+- Show me tweets having [#Electric](topic) in the [past](time) [6 months](time).
+- Show me some [pictures](content) of the [moon](topic).
+- What is [@google](account) talking about on Twitter?
+- Show me some [pictures](content) of the [moon](topic).
+- Show me some [pictures](content) of the [sun](topic).
+- Show me tweets containing [#TowsonU](topic) within [2 months](time).
 
-## intent:see_again
-- I'd like to see you again
-- I hope to see you again
-- would be nice to see you again
-- that'd be great to see you again
-- I'd be happy to see you again
-- I'll miss you
-- can I see you again
+## intent:unhelpful
+- you're not helping me
+- you are bad
+- you're very bad
+- you're really bad
+- you are useless
+- you are horrible
+- you are a waste of time
+- you are disgusting
+- you are lame
+- you are no good
+- you're bad
+- you're awful
+- you are not cool
+- you are not good
+- you are so bad
+- you are so useless
+- you are terrible
+- you are totally useless
+- you are very bad
+- you are waste
+- you're a bad
+- you're not a good
+- you're not very good
+- you're terrible
+- you're the worst
+- you're the worst ever
+- you're worthless
 
-## intent:lets_talk
-- let's discuss something
-- let's have a discussion
-- can I speak
-- can I start speaking
-- can we talk
-- speak with me
-- let's talk
-- I want to talk to you
-- I need to talk to you
-- I want to speak with you
-- can we chat
+## intent:wait
+- wait a second
+- could you wait
+- wait please
+- hold on
+- wait
+- oh wait
+- wait hold on
+- don't rush
 
-## intent:be_back
-- I'll get back to you in a moment
-- be back in 5 minutes
-- I'll be back
-- I promise to come back
-- I'll be back in a few minutes
+## intent:wanna_talk
+- bad time for talking
+- I don't want to talk
+- let's not talk
+- I'm not talking to you anymore
+- I don't want to talk to you
+- let's stop talking for a minute
+- I'm not in the mood for chatting
+
+## intent:welcome
+- that's my pleasure
+- my pleasure
+- anytime
+- welcome
+- you're welcome
+- sure welcome
+- welcome here
+- you're so welcome
+- anything you want
+
+## intent:well_done
+- good job
+- great job
+- way to go
+- well done
+- nice work
+- great work
+- amazing work
+- bravo
+- good work
+
+## intent:what_you_mean
+- what exactly do you mean
+- what do you mean
+- is that what you mean
+- what do you mean exactly
+- but what do you mean
+
+## intent:whatsup
+- what is on your mind
+- what's happened
+- what is up
+- what's up
+- whazzup
+- good what's up
+- I said what's up
+- then what's up
+- what's shaking
+- wassup
+- what is going on
+- what is happening
+- what's cracking
+- what's cooking
+- hey what's up
+- what's up today
+
+## intent:wow
+- wow
+- wow wow
+- wow wow wow
+- wooow
+- woah
+
+## intent:wrong
+- that was wrong
+- that's not what I asked
+- that's wrong
+- wrong
+- it is not right
+- that's not right
+- it's wrong
+- that is incorrect
+- incorrect
+- not correct
+- you are wrong
+- not right

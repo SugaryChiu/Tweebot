@@ -30,6 +30,15 @@ train-nlu:
 train-core:
 	python -m rasa_core.train -d domain.yml -s data/stories.md -o models/current/dialogue -c policy.yml
 
+itrain-core:
+# Visualize conversation structure at http://localhost:5005/visualization.html
+	python -m rasa_core.train \
+  interactive -o models/current/dialogue \
+  -d domain.yml -c policy.yml \
+  -s data/stories.md \
+  --nlu models/current/nlu \
+  --endpoints endpoints.yml
+
 action-server:
 	python -m rasa_core_sdk.endpoint --actions actions
 
